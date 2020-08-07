@@ -12,7 +12,15 @@
         <module>interview-01</module>
         <module>interview-02</module>
         <module>interview-03</module>
+        <module>interview-04</module>
     </modules>
 
+    <dependencies>
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.73</version>
+        </dependency>
+    </dependencies>
 
 </project>
