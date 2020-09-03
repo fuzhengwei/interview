@@ -15,6 +15,7 @@
         <module>interview-04</module>
         <module>interview-05</module>
         <module>interview-07</module>
+        <module>interview-08</module>
     </modules>
 
     <dependencies>
