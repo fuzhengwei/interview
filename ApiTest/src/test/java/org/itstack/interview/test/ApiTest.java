@@ -1,5 +1,7 @@
 package org.itstack.interview.test;
 
+import org.junit.Test;
+
 /**
  * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
  * 公众号：bugstack虫洞栈
@@ -7,8 +9,9 @@ package org.itstack.interview.test;
  */
 public class ApiTest {
 
-    public static void main(String[] args) {
-        System.out.println("Hi!");
+    @Test
+    public void test_() {
+
     }
 
 }
