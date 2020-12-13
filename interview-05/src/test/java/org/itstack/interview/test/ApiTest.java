@@ -69,14 +69,10 @@ public class ApiTest {
             int idx = (64 - 1) & hash;
 
             if (idx == 2) {
-                System.out.println(i + " Idx：" + idx);
+               // System.out.println(i + " Idx：" + idx);
             }
 
-            if (idx == 7) {
-                System.out.println(i + " Idx：" + idx);
-            }
-
-            if (idx == 12) {
+            if (idx == 62) {
                 System.out.println(i + " Idx：" + idx);
             }
         }
