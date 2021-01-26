@@ -9,29 +9,96 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
-        <module>interview-01</module>
-        <module>interview-02</module>
-        <module>interview-03</module>
         <module>interview-04</module>
         <module>interview-05</module>
         <module>interview-07</module>
         <module>interview-08</module>
+        <module>interview-09</module>
+        <module>interview-10</module>
         <module>ApiTest</module>
+        <module>interview-11</module>
+        <module>interview-12</module>
+        <module>interview-13</module>
+        <module>interview-14</module>
+        <module>interview-15</module>
+        <module>interview-16</module>
+        <module>interview-17</module>
+        <module>interview-18</module>
+        <module>interview-19</module>
+        <module>interview-20</module>
+        <module>interview-21</module>
+        <module>interview-22</module>
+        <module>interview-23</module>
+        <module>interview-24</module>
+        <module>interview-25</module>
+        <module>interview-26</module>
+        <module>interview-27</module>
+        <module>interview-01</module>
+        <module>interview-02</module>
+        <module>interview-03</module>
     </modules>
 
     <dependencies>
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>fastjson</artifactId>
-            <version>1.2.73</version>
-        </dependency>
-        <!-- https://mvnrepository.com/artifact/junit/junit -->
+
         <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
-            <version>4.13</version>
+            <version>4.12</version>
             <scope>test</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.68</version>
+        </dependency>
+        <!-- LOGGING begin -->
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>jcl-over-slf4j</artifactId>
+            <version>1.7.5</version>
+        </dependency>
+        <dependency>
+            <groupId>ch.qos.logback</groupId>
+            <artifactId>logback-classic</artifactId>
+            <version>1.0.9</version>
+            <exclusions>
+                <exclusion>
+                    <artifactId>slf4j-api</artifactId>
+                    <groupId>org.slf4j</groupId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.openjdk.jol/jol-cli -->
+        <dependency>
+            <groupId>org.openjdk.jol</groupId>
+            <artifactId>jol-cli</artifactId>
+            <version>0.14</version>
+        </dependency>
+        <!-- 命令行参数解析器 -->
+        <dependency>
+            <groupId>com.beust</groupId>
+            <artifactId>jcommander</artifactId>
+            <version>1.72</version>
+        </dependency>
     </dependencies>
+
+    <build>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>8</source>
+                    <target>8</target>
+                </configuration>
+            </plugin>
+        </plugins>
+    </build>
 
 </project>
