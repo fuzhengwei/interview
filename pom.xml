@@ -9,13 +9,13 @@
     <packaging>pom</packaging>
     <version>1.0-SNAPSHOT</version>
     <modules>
+        <module>ApiTest</module>
         <module>interview-04</module>
         <module>interview-05</module>
         <module>interview-07</module>
         <module>interview-08</module>
         <module>interview-09</module>
         <module>interview-10</module>
-        <module>ApiTest</module>
         <module>interview-11</module>
         <module>interview-12</module>
         <module>interview-13</module>
@@ -36,6 +36,10 @@
         <module>interview-01</module>
         <module>interview-02</module>
         <module>interview-03</module>
+        <module>interview-28</module>
+        <module>interview-29</module>
+        <module>interview-30</module>
+        <module>interview-31</module>
     </modules>
 
     <dependencies>

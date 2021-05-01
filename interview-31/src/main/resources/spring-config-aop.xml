@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-3.0.xsd http://www.springframework.org/schema/aop https://www.springframework.org/schema/aop/spring-aop.xsd"
+       default-autowire="byName">
+
+    <bean id="bean_a" class="org.itstack.interview.Bean_A">
+        <property name="bean_b" ref="bean_b"/>
+    </bean>
+
+    <bean id="bean_b" class="org.itstack.interview.Bean_B">
+        <property name="bean_a" ref="bean_a"/>
+    </bean>
+
+    <bean id="myAspect" class="org.itstack.interview.MyAspect"/>
+
+    <aop:config>
+        <aop:aspect ref="myAspect">
+            <aop:before method="before" pointcut="execution(public void org.itstack.interview.*.sayHello(..))"/>
+        </aop:aspect>
+    </aop:config>
+
+</beans>

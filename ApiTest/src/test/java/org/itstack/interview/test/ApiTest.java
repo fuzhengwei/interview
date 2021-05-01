@@ -1,6 +1,7 @@
 package org.itstack.interview.test;
 
 import org.junit.Test;
+import sun.misc.Unsafe;
 
 /**
  * 博客：https://bugstack.cn - 沉淀、分享、成长，让自己和他人都能有所收获！
@@ -9,9 +10,8 @@ import org.junit.Test;
  */
 public class ApiTest {
 
-    @Test
-    public void test_() {
-
+    public static void main(String[] args) {
+//        Unsafe.loadFence();
     }
 
 }
