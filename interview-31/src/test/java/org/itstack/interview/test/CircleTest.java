@@ -1,5 +1,8 @@
 package org.itstack.interview.test;
 
+import org.springframework.beans.factory.annotation.Autowired;
+
+import javax.annotation.Resource;
 import java.lang.reflect.Field;
 import java.util.HashMap;
 import java.util.Map;
@@ -10,10 +13,6 @@ public class CircleTest {
     private final static Map<String, Object> singletonObjects = new ConcurrentHashMap<>(256);
 
     public static void main(String[] args) throws Exception {
-        Class[] classes = {A.class, B.class};
-        for (Class clazz : classes) {
-            getBean(clazz);
-        }
         System.out.println(getBean(B.class).getA());
         System.out.println(getBean(A.class).getB());
     }
@@ -23,16 +22,17 @@ public class CircleTest {
         if (singletonObjects.containsKey(beanName)) {
             return (T) singletonObjects.get(beanName);
         }
-        
-        Object obj = beanClass.getDeclaredConstructor().newInstance();
+        // 实例化对象入缓存
+        Object obj = beanClass.newInstance();
         singletonObjects.put(beanName, obj);
-
+        // 属性填充补全对象
         Field[] fields = obj.getClass().getDeclaredFields();
         for (Field field : fields) {
             field.setAccessible(true);
             Class<?> fieldClass = field.getType();
             String fieldBeanName = fieldClass.getSimpleName().toLowerCase();
             field.set(obj, singletonObjects.containsKey(fieldBeanName) ? singletonObjects.get(fieldBeanName) : getBean(fieldClass));
+            field.setAccessible(false);
         }
         return (T) obj;
     }
@@ -40,6 +40,7 @@ public class CircleTest {
 }
 
 class A {
+
     private B b;
 
     public B getB() {
