@@ -70,7 +70,7 @@
 - 第 3 节：HashMap 源码分析(下)  - [`interview-03`](https://github.com/fuzhengwei/interview/tree/master/interview-03)
 - 第 4 节：2-3树与红黑树学习(上) - [`interview-04`](https://github.com/fuzhengwei/interview/tree/master/interview-04)
 - 第 5 节：2-3树与红黑树学习(下) - [`interview-05`](https://github.com/fuzhengwei/interview/tree/master/interview-05)
-- 第 6 节：ArrayList 详细分析 - [`interview-07`](https://github.com/fuzhengwei/interview/tree/master/interview-06)
+- 第 6 节：ArrayList 详细分析 - [`interview-07`](https://github.com/fuzhengwei/interview/tree/master/interview-07)
 - 第 7 节：LinkedList、ArrayList，插入分析 - [`interview-08`](https://github.com/fuzhengwei/interview/tree/master/interview-08)
 - 第 8 节：双端队列、延迟队列、阻塞队列 - [`interview-09`](https://github.com/fuzhengwei/interview/tree/master/interview-09)
 - 第 9 节：java.util.Collections、排序、二分、洗牌、旋转算法 - [`interview-10`](https://github.com/fuzhengwei/interview/tree/master/interview-10)
