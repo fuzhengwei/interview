@@ -19,7 +19,7 @@
         <commons-lang3.version>3.8.1</commons-lang3.version>
         <fastjson.version>1.2.60</fastjson.version>
         <junit.version>4.12</junit.version>
-        <logback.version>1.0.9</logback.version>
+        <logback.version>1.2.0</logback.version>
         <slf4j.version>1.7.7</slf4j.version>
         <spring.version>4.3.24.RELEASE</spring.version>
         <servlet-api.version>2.5</servlet-api.version>
